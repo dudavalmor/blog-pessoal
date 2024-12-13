@@ -1,5 +1,8 @@
 package com.generation.blogpessoal.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.Email;
+
 public class UsuarioLogin {
 	
 	private Long id;
@@ -8,6 +11,7 @@ public class UsuarioLogin {
 	private String senha;
 	private String foto;
 	private String token;
+	
 	
 	public Long getId() {
 		return id;
