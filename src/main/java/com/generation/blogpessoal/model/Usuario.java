@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,7 +20,7 @@ import jakarta.validation.constraints.Size;
 @Entity
 @Table(name = "tb_usuarios")
 public class Usuario {
-
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -43,6 +44,7 @@ public class Usuario {
 	private List<Postagem> postagem;
 
 	/* Métodos Construtores */
+	
 	
 	public Usuario(Long id, String nome, String usuario, String senha, String foto) {
 		this.id = id;
@@ -103,5 +105,7 @@ public class Usuario {
 	public void setPostagem(List<Postagem> postagem) {
 		this.postagem = postagem;
 	}
+	
+	
 
 }
