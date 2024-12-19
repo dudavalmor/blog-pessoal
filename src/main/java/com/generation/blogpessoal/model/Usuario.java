@@ -55,8 +55,6 @@ public class Usuario {
 
 	public Usuario() { }
 
-	/* Insira os Getters and Setters */
-
 	public Long getId() {
 		return this.id;
 	}
