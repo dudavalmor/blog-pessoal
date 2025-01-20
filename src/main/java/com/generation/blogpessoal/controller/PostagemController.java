@@ -71,5 +71,4 @@ public class PostagemController {
 			throw new ResponseStatusException(HttpStatus.NOT_FOUND);
 		postagemRepository.deleteById(id);
 	}
-	
 }
