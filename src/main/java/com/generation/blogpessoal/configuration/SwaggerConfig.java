@@ -20,18 +20,18 @@ public class SwaggerConfig {
         return new OpenAPI()
             .info(new Info()
                 .title("Projeto Blog Pessoal")
-                .description("Projeto Blog Pessoal - Eduarda Valmor")
+                .description("Projeto Blog Pessoal - Generation Brasil")
                 .version("v0.0.1")
                 .license(new License()
-                    .name("Blog Pessoal - Duda")
-                    .url("https://dudablogs.org/"))
+                    .name("Generation Brasil")
+                    .url("https://brazil.generation.org/"))
                 .contact(new Contact()
                     .name("Eduarda Valmor")
                     .url("https://github.com/dudavalmor")
-                    .email("duda_valmor@hotmail.com")))
+                    .email("eduarda.bserrano@gmail.com")))
             .externalDocs(new ExternalDocumentation()
                 .description("Github")
-                .url("https://github.com/dudavalmor/"));
+                .url("https://github.com/dudavalmor/blogpessoal"));
     }
 
 
